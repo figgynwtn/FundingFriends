@@ -11,6 +11,10 @@ const DonationSchema = new mongoose.Schema({
         ref: 'Campaign', // Assuming you have a Campaign model
         required: true
     },
+    message: {
+        type: String,
+        trim: true
+    },
     amount: {
         type: Number,
         required: true

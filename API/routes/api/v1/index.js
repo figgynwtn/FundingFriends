@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+
 const mongoose = require('mongoose');
-require('../../../models/Campaign');
-require('../../../models/Donation');
+require('models/Campaign');
+require('models/Donation');
 const Campaign = mongoose.model('Campaign');
 const Donation = mongoose.model('Donation');
 
