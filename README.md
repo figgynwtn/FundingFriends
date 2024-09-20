@@ -56,7 +56,7 @@ Funding Friends is a full-stack donation site built using the MERN (MongoDB, Exp
 
 ## Testing the Application
 ### Test User Logins
-You can test the login functionality with the following users. All passwords follow the format: Firstname1234 (with the first letter capitalized).
+You can test the login functionality with the following 5/50 users. All passwords follow the format: Firstname1234 (with the first letter capitalized).
 
 - Rebecca Howell
   - Email: rebecca.howell@example.com
