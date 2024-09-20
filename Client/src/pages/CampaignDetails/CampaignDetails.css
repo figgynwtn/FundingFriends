@@ -1,0 +1,106 @@
+.donation-card {
+    background-color: #80ED99; /* Light green background for the card */
+    border: 1px solid #57CC99;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+}
+
+    .funded-status {
+    font-weight: bold;
+    color: black; /* Default color */
+  }
+  
+  .funded-status.funded {
+    color: green; /* Color when funded */
+  }
+
+  .details-page-container {
+    padding: 20px;
+    background-color: #22577A; /* Background color for the section */
+}
+
+h1 {
+    color: #C7F9CC;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .details-page-container .row {
+  display: flex; /* Use flex to align items within the row */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  color: #80ED99; 
+}
+
+.content-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between sections */
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+.share-buttons {
+    display: flex;
+    flex-direction: column; /* Stack share buttons vertically */
+    margin-top: 10px; /* Space between the donate button and share buttons */
+}
+
+.donation-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.donate-button {
+  background-color: #80ED99;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #57CC99;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px; /* Add margin to create space between buttons */
+}
+
+.donate-button:hover {
+  background-color: #57CC99;
+  border-color: #38A3A5;
+}
+
+.share-button {
+  background-color: #80ED99;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 10px; /* Add margin to create space between buttons */
+}
+
+.share-button:hover {
+  background-color: #57CC99;
+}
+  
+@media (max-width: 1024px) {
+    .donation-card {
+        flex: 1 1 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .donation-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .donation-card {
+        flex: 1 1 100%;
+    }
+}

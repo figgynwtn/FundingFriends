@@ -1,0 +1,50 @@
+/* Flexbox layout for header */
+.navigation {
+  background-color: #C7F9CC;
+  display: flex;
+  justify-content: space-between; /* Ensures space between brand and profile link */
+  align-items: center; /* Aligns items vertically in the center */
+  padding: 10px 20px;
+}
+
+.navbar-brand {
+  padding: 15px;
+}
+
+.heading {
+  font-family: 'Lora', serif;
+  color: #22577A;;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin: 0;
+  text-decoration: underline;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #22577A; /* Default text color */
+  text-decoration: none; /* No underline */
+  padding: 10px; /* Adjust spacing */
+  transition: color 0.15s ease-in-out; /* Smooth transition for color */
+}
+
+.nav-link:hover {
+  color: #57CC99 !important; /* Change text color on hover */
+}
+
+
+/* Utility class for container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

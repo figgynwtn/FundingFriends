@@ -1,0 +1,108 @@
+
+/* Profile Page Styles */
+
+.profile-heading {
+  color: #C7F9CC;
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-subheading {
+  font-size: 1.25rem;
+  color: #C7F9CC;
+  margin-bottom: 15px;
+}
+
+.logout-button {
+  background-color: #80ED99;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #57CC99;
+}
+
+/* Container adjustments */
+
+.profile-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between sections */
+  padding: 20px; /* Match padding from campaign details */
+  background-color: #22577A; /* Background color for the section */
+  min-height: 100vh; /* Ensure the page extends to the bottom */
+}
+
+.donations-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px 0; /* Adjust top and bottom padding */
+}
+
+.donation-card {
+  flex: 1 1 calc(25% - 20px); /* Adjust width based on container size and gaps */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+  background-color: #fff;
+  border: 1px solid #C7F9CC; /* Card border color */
+  border-radius: 8px;
+  padding: 20px; /* Padding to match CampaignDetails */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  min-width: 250px; /* Ensure cards don't get too small */
+  margin-bottom: 20px; /* Space between rows of cards */
+}
+
+.col {
+  color: #C7F9CC;
+}
+
+.donation-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.donation-card h3 {
+  margin-top: 0;
+  color: #38A3A5;
+}
+
+.donation-card p {
+  margin-bottom: 0;
+  color: #38A3A5;
+}
+
+.btn-primary {
+  background-color: #22577A; /* Your desired background color */
+  border-color: #22577A; /* Border color to match */
+}
+
+.btn-primary:hover {
+  background-color: #38A3A5; /* Hover background color */
+  border-color: #38A3A5; /* Hover border color */
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 1024px) {
+  .donation-card {
+    flex: 1 1 calc(33.333% - 20px); /* Three items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .donation-card {
+    flex: 1 1 calc(50% - 20px); /* Two items per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-card {
+    flex: 1 1 100%; /* Full width on very small screens */
+  }
+}

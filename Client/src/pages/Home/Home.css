@@ -1,0 +1,39 @@
+.card {
+  background-color: #80ED99; /* Light Green */
+  border-color: #57CC99; /* Greenish Teal */
+  color: #22577A; /* Dark Blue */
+}
+
+.card-body {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between sections */
+  padding: 20px; /* Match padding from campaign details */
+  background-color: #22577A; /* Background color for the section */
+  min-height: 100vh; /* Ensure the page extends to the bottom */
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #38A3A5; /* Medium Teal */
+}
+
+/* Links */
+.card-link {
+  color: #38A3A5;; /* Dark Blue */
+}
+
+.card-link:hover {
+  color: #22577A ; /* Medium Teal */
+}
+
+/* Headings */
+h1 {
+  color: #22577A; /* Dark Blue */
+  font-family: 'Lora', serif;
+}
