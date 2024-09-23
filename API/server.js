@@ -45,7 +45,9 @@ app.use(limiter);
 // Enable CORS
 if (process.env.NODE_ENV === 'production') {
     app.use(cors({
-        origin: "https://fundingfriends-frontend.onrender.com", // Adjusted to frontend URL
+        origin: "https://fundingfriends-frontend.onrender.com",
+        methods: ["GET", "POST", "PUT", "DELETE"], // Allowed methods
+        allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     }));
 } else {
     app.use(cors());
