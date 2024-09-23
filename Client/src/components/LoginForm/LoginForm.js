@@ -3,7 +3,6 @@ import { useNavigate, Navigate } from 'react-router-dom';
 import { APIURLContext } from 'src/contexts/APIURLContext';
 import useToken from 'src/hooks/useToken';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './LoginForm.css';
 
 export default function LoginForm() {
