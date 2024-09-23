@@ -45,7 +45,7 @@ app.use(limiter);
 // Enable CORS
 if (process.env.NODE_ENV === 'production') {
     app.use(cors({
-        origin: "https://sp24-43600-newt-donationpal.uc.r.appspot.com",
+        origin: "https://fundingfriends-backend.onrender.com/",
     }));
 } else {
     app.use(cors());
